@@ -2,9 +2,7 @@
 	path = qtbase
 	url = https://github.com/sunwangme/qtbase.git
 	branch = 5.5
-	initrepo = true
 [submodule "qttools"]
 	path = qttools
 	url = https://github.com/sunwangme/qttools.git
 	branch = 5.5
-	initrepo = true
