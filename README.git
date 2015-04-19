@@ -9,9 +9,9 @@ git checkout 5.5
 git submodule update --init --recursive
 
 3. cd qt5
-configure -prefix "c:\qtlite\qt5.5-vs12" -confirm-license -opensource -release -shared -nomake tests -nomake examples -no-compile-examples -c++11 -ltcg -qt-sql-sqlite -plugin-sql-sqlite -no-freetype -no-opengl -no-qml-debug -no-icu -no-angle -qt-zlib -qt-libpng -qt-libjpeg -no-openssl -no-dbus -no-audio-backend -no-wmf-backend -no-style-fusion -mp -platform win32-msvc2013
+configure -prefix "c:\qtlite\qt5.5-vs12" -confirm-license -opensource -debug-and-release -force-debug-info -shared -nomake tests -nomake examples -no-compile-examples -c++11 -ltcg -qt-sql-sqlite -plugin-sql-sqlite -no-freetype -no-opengl -no-qml-debug -no-icu -no-angle -qt-zlib -qt-libpng -qt-libjpeg -no-openssl -no-dbus -no-audio-backend -no-wmf-backend -no-style-fusion -mp -platform win32-msvc2013
 //-no-rtti qtcreator-app的dynamic_cast编译不过去，先去掉
-//-debug-and-release
+//-debug-and-release 减小体积直接去掉用release调试
 //-no-style-windows -no-style-windowsvista -no-style-windowsxp 
 //vista依赖xp,xp依赖windows
 
